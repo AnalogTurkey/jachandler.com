@@ -164,20 +164,11 @@
     
     
     
-    
-
-<p>The site&rsquo;s CDN is handled by <a href="https://www.cloudflare.com/">Cloudflare</a>. Free CDN, DNS, optimizations, and added security.</p>
+    <p>The site&rsquo;s CDN is handled by <a href="https://www.cloudflare.com/">Cloudflare</a>. Free CDN, DNS, optimizations, and added security.</p>
 
 <p>Images are hosted using <a href="https://www.backblaze.com/b2/cloud-storage.html">Backblaze B2</a>. Although it doesn&rsquo;t support many of the features of other cloud storage solutions, it&rsquo;s a good bit cheaper. More importantly, it allows for the creation of simple request and bandwidth caps that AWS and Google don&rsquo;t support. I don&rsquo;t want a small personal site to scale up in case of an attack; I want it to stop loading large assets to minimize the damage. Or worse, someone trying to embed my content elsewhere. Even if B2 can&rsquo;t easily set bucket policies to only route through Cloudflare, the caps are an absolute protection against overcharging.</p>
 
 <p>The site itself is hosted on <a href="https://aws.amazon.com/s3/">Amazon S3</a>. Unlike Backblaze, AWS doesn&rsquo;t have a simple way to automatically shut down a site in case of an attack. That being the case, I really have no choice but to only host small files there; the only limit protecting me there is the request limit. As long as the files are kept small, that should saturate before paying for bandwidth becomes a massive issue.</p>
-
-<hr />
-
-<h3 id="comments">Comments</h3>
-
-<p><div id="commento"></div>
-<script src="https://cdn.commento.io/js/commento.js"></script></p>
 
 
     

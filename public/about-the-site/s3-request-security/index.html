@@ -218,13 +218,6 @@ def lambda_handler(event, context):
 <p>Under bucket management, enable request metrics. Then in Cloudwatch, create an alarm with the desired metric as a source and set the threshold and time period that you want to trigger the bucket deletion (I used AllRequests &gt;= 5,000 for 1 datapoints within 1 hour – Sum). For the action, have it send a notification to an SNS topic when in alarm state. In Lambda, create a Python function, paste the code, and set the SNS topic as the trigger.</p>
 
 <p>With that, the buckets will delete themselves when the number of requests directly to a bucket in a short period of time get out of hand. It&rsquo;s not at all an elegant solution, but as far as I&rsquo;m aware it&rsquo;s the only one that works. With a CDN in front, normal usage won&rsquo;t even touch the bucket most of the time, meaning there is minimal danger of a false alarm. Until there is a better and safer way though, I&rsquo;m keeping my S3 usage to a minimum.</p>
-
-<hr />
-
-<h3 id="comments">Comments</h3>
-
-<p><div id="commento"></div>
-<script src="https://cdn.commento.io/js/commento.js"></script></p>
 <div class="footnotes">
 
 <hr />
