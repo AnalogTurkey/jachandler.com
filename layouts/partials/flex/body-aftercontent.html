@@ -1,0 +1,55 @@
+<!--   <div class="chevrons">
+    {{ partial "next-prev-page.html" . }}
+  </div>
+ -->
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    {{if .Params.tags }}
+    <div class="tags"> 
+      {{ range $index, $tag := .Params.tags }}
+        <a class="label label-default" href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}">{{ $tag }}</a>
+      {{ end }}
+    </div>
+    {{end}}
+
+    {{with .Params.LastModifierDisplayName}}
+    <div class="author">
+        <i class='fa fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a>
+    </div>
+    {{end}}
+
+  {{ if not .Page.Lastmod.IsZero }}
+    <div class="date">
+        ©{{.Page.Date.Format "2006"}} Jonathan Chandler. {{T "last-update-on"}} {{ .Page.Lastmod.Format "January 2, 2006" }}. 
+    </div>
+    {{end}}
+
+    <div class="github-link">  <!-- Maybe I'll fix this eventually. -->
+      <a href="/about-the-site" target="blank"><i class="fa fa-th-list"></i>
+        Credits</a>
+    </div>
+  </div>
+
+
+	<div>
+{{ $footer := print "_footer." .Lang }}
+{{ range where .Site.Pages "Source.BaseFileName" $footer }}
+  {{ .Content }} 
+{{else}}
+  {{ if .Site.GetPage "page" "_footer.md" }}
+    {{(.Site.GetPage "page" "_footer.md").Content}}
+  {{else}}
+    {{ T "create-footer-md" }}
+  {{end}}
+{{end}}
+
+
+	</div>
+</footer>
+
+{{ partial "flex/scripts.html" . }}

@@ -1,0 +1,36 @@
+baseURL = "http://jachandler.com/"
+languageCode = "en-us"
+title = "Jonathan Chandler"
+theme = "docdock" 
+
+[params]
+showVisitedLinks = true # default is false
+themeStyle = "flex" # "original"
+themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
+ordersectionsby = "weight" # ordersectionsby = "title"
+disableHomeIcon = false # default is false
+disableSearch = true # default is false
+disableNavChevron = false # set true to hide next/prev chevron, default is false
+highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
+menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
+enableGitInfo = true
+
+[[menu.shortcuts]]
+pre = "<h3>More</h3>"
+name = "<i class='fa fa-shopping-bag'></i> <label>Ebay</label>"
+identifier = "ebayShortcut"
+url = "https://www.ebay.com/sch/analogturkey/m.html?_nkw=&_armrs=1&_ipg=&_from="
+weight = 30
+
+#[[menu.shortcuts]]
+#name = "<i class='fa fa-linkedin-square'></i> <label>LinkedIn</label>"
+#identifier = "linkedinShortcut"
+#url = "https://www.linkedin.com/in/jonathan-chandler/"
+#weight = 21
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-file-pdf-o'></i> <label>Resume</label>"
+identifier = "resumeShortcut"
+url = "https://f002.backblazeb2.com/file/jachandlerFiles/JonathanAChandler_Resume_7-18.pdf"
+weight = 10
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hosting</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.48" />
+<title>Hosting</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<script src="/js/jquery-2.x.min.js" async></script>
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+<script type="text/javascript">
+      var baseurl = "http:\/\/jachandler.com\/";
+</script>
+<meta name="description" content="Sure, I could put the whole thing on AWS, but that wouldn&#39;t be very safe (or cheap). And yes, Netlify exists, but that comes with limitations of its own. To maximize expandability and control while keeping running costs near zero, I&#39;ve spread out the hosting over a couple of providers.">
+
+
+
+    
+  </head>
+  <body data-url="/about-the-site/hosting/">
+    
+      <header>
+  <div class="logo">
+    
+	
+	
+  
+    <a class="baselink" href="http://jachandler.com/">Jonathan Chandler</a>
+  
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://f002.backblazeb2.com/file/jachandlerFiles/JonathanAChandler_Resume_7-18.pdf"  rel="noopener">
+                  <i class='fa fa-file-pdf-o'></i> <label>Resume</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://www.ebay.com/sch/analogturkey/m.html?_nkw=&amp;_armrs=1&amp;_ipg=&amp;_from="  rel="noopener">
+                  <i class='fa fa-shopping-bag'></i> <label>Ebay</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/about-the-site/" class="dd-item parent alwaysopen haschildren
+        ">
+      <div>
+      <a href="/about-the-site/">About The Site</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/about-the-site/s3-request-security/" class="dd-item">
+        <div>
+          <a href="/about-the-site/s3-request-security/">
+            Amazon S3 Request Security
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/about-the-site/hosting/" class="dd-item active">
+        <div>
+          <a href="/about-the-site/hosting/">
+            Hosting
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/about-the-site/building/" class="dd-item">
+        <div>
+          <a href="/about-the-site/building/">
+            Building the Site
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/projects/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/projects/">Projects</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/projects/microphone-preamp/" class="dd-item">
+        <div>
+          <a href="/projects/microphone-preamp/">
+            Microphone Preamplifier Board
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/projects/audio-measurement-rig/" class="dd-item">
+        <div>
+          <a href="/projects/audio-measurement-rig/">
+            T.O.H.R.U (WIP)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/projects/sony-mdr-1000x-repair/" class="dd-item">
+        <div>
+          <a href="/projects/sony-mdr-1000x-repair/">
+            Sony MDR-1000X Repair
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/projects/das-model-s-mac-restoration/" class="dd-item">
+        <div>
+          <a href="/projects/das-model-s-mac-restoration/">
+            Das Model S Mac Restoration
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/about-the-site/" >
+   About The Site</option> 
+      <option value="/about-the-site/s3-request-security/" >- Amazon S3 Request Security</option>
+      <option value="/about-the-site/hosting/"  selected>- Hosting</option>
+      <option value="/about-the-site/building/" >- Building the Site</option>
+  
+    <option value="/projects/" >
+   Projects</option> 
+      <option value="/projects/microphone-preamp/" >- Microphone Preamplifier Board</option>
+      <option value="/projects/audio-measurement-rig/" >- T.O.H.R.U (WIP)</option>
+      <option value="/projects/sony-mdr-1000x-repair/" >- Sony MDR-1000X Repair</option>
+      <option value="/projects/das-model-s-mac-restoration/" >- Das Model S Mac Restoration</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+    
+
+    <h1>Hosting</h1>
+    
+    
+    
+    
+
+<p>The site&rsquo;s CDN is handled by <a href="https://www.cloudflare.com/">Cloudflare</a>. Free CDN, DNS, optimizations, and added security.</p>
+
+<p>Images are hosted using <a href="https://www.backblaze.com/b2/cloud-storage.html">Backblaze B2</a>. Although it doesn&rsquo;t support many of the features of other cloud storage solutions, it&rsquo;s a good bit cheaper. More importantly, it allows for the creation of simple request and bandwidth caps that AWS and Google don&rsquo;t support. I don&rsquo;t want a small personal site to scale up in case of an attack; I want it to stop loading large assets to minimize the damage. Or worse, someone trying to embed my content elsewhere. Even if B2 can&rsquo;t easily set bucket policies to only route through Cloudflare, the caps are an absolute protection against overcharging.</p>
+
+<p>The site itself is hosted on <a href="https://aws.amazon.com/s3/">Amazon S3</a>. Unlike Backblaze, AWS doesn&rsquo;t have a simple way to automatically shut down a site in case of an attack. That being the case, I really have no choice but to only host small files there; the only limit protecting me there is the request limit. As long as the files are kept small, that should saturate before paying for bandwidth becomes a massive issue.</p>
+
+<hr />
+
+<h3 id="comments">Comments</h3>
+
+<p><div id="commento"></div>
+<script src="https://cdn.commento.io/js/commento.js"></script></p>
+
+
+    
+    
+      
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+  
+    <div class="date">
+        ©2018 Jonathan Chandler. Last update on September 19, 2018. 
+    </div>
+    
+
+    <div class="github-link">  
+      <a href="/about-the-site" target="blank"><i class="fa fa-th-list"></i>
+        Credits</a>
+    </div>
+  </div>
+
+
+	<div>
+
+
+  
+    <p><!--sse-->Any questions? Send me a message using c&#111;&#110;t&#97;&#99;&#116;&#64;j&#97;ch&#97;n&#100;ler&#46;&#99;o&#109; <!--/sse--></p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/lazysizes.min.js" async=""></script>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!-- image -->
+<figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
+    {{ with .Get "link"}}<a href="{{.}}">{{ end }}
+        <img src="/images/{{ .Get "src" }}-256.{{ .Get "type" }}" data-sizes="auto" data-srcset="/images/{{ .Get "src" }}-256.{{ .Get "type" }} 256w,/images/{{ .Get "src" }}-360.{{ .Get "type" }} 360w,/images/{{ .Get "src" }}-512.{{ .Get "type" }} 512w,/images/{{ .Get "src" }}-640.{{ .Get "type" }} 640w,/images/{{ .Get "src" }}-768.{{ .Get "type" }} 768w,/images/{{ .Get "src" }}-1024.{{ .Get "type" }} 1024w,/images/{{ .Get "src" }}-1366.{{ .Get "type" }} 1366w,/images/{{ .Get "src" }}-1600.{{ .Get "type" }} 1600w,/images/{{ .Get "src" }}-1920.{{ .Get "type" }} 1920w" {{ with .Get "width" }}width="{{.}}" {{ end }} style="border:1px solid indigo" class="lazyload" />
+        <noscript>
+          <img src="/images/{{ .Get "src" }}-512.{{ .Get "type" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}" {{ end }}{{ with .Get "width" }}width="{{.}}" {{ end }} style="border:1px solid indigo"/>
+        </noscript>
+    {{ if .Get "link"}}</a>{{ end }}
+    {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
+    <figcaption>{{ if isset .Params "title" }}
+        <h4>{{ .Get "title" | markdownify }}</h4>{{ end }}
+        {{ if or (.Get "caption") (.Get "attr")}}
+        {{ .Get "caption" | markdownify }}
+        {{ with .Get "attrlink"}}<a href="{{.}}"> {{ end }}
+            {{ .Get "attr" }}
+        {{ if .Get "attrlink"}}</a> {{ end }}
+         {{ end }}
+    </figcaption>
+    {{ end }}
+</figure>
+<!-- image -->
