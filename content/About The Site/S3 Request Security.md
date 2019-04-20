@@ -47,4 +47,3 @@ With that, the buckets will delete themselves when the number of requests direct
 
 [^1]:Google Cloud doesn't either. However, they do have a good indefinite free tier which respects its own quotas, which is ideal for small projects. I hear Azure has spending limits, though I haven't used it so I can't comment on how well they work.
 
-

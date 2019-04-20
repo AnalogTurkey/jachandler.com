@@ -551,6 +551,12 @@ h6:hover .anchor {
   margin-top: -5px;
   border-right-color: rgba(0, 0, 0, 0.8); }
 
+commentbox {
+	color: #aaa;
+	font-size: .95rem;
+	margin: 0.5rem 10rem;
+	padding: 0.25rem 4rem; }
+  
 footer {
   color: #aaa;
   font-size: .95rem;
