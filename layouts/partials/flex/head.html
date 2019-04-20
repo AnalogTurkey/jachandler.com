@@ -1,3 +1,4 @@
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 {{ .Hugo.Generator }}
@@ -10,6 +11,9 @@
 	<link href="{{(printf "theme-%s/variant-%s.css" ($.Site.Params.themeStyle| default "flex") .) | relURL}}" rel="stylesheet">
 {{end}}
 <script src="{{"js/jquery-2.x.min.js" | relURL}}" async></script>
+<script src="{{"js/lazysizes.min.js" | relURL}}" async=""></script>
+<script src="{{"js/disqusloader.js" | relURL}}" async=""></script>
+
 <link rel="stylesheet" href="{{"css/bootstrap.min.css" | relURL}}">
 
 <script type="text/javascript">

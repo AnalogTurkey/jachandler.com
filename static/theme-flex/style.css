@@ -551,11 +551,13 @@ h6:hover .anchor {
   margin-top: -5px;
   border-right-color: rgba(0, 0, 0, 0.8); }
 
-.comments {
+.disqus {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 }
+
+.disqus-placeholder.is-hidden { display: none; }
   
 footer {
   color: #aaa;
