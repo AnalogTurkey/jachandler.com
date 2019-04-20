@@ -3,7 +3,8 @@
   <head>
     <title>Amazon S3 Request Security</title>
     
-      <meta charset="utf-8">
+      
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
 <title>Amazon S3 Request Security</title>
@@ -13,6 +14,9 @@
 <link href="/theme-flex/style.css" rel="stylesheet">
 
 <script src="/js/jquery-2.x.min.js" async></script>
+<script src="/js/lazysizes.min.js" async=""></script>
+<script src="/js/disqusloader.js" async=""></script>
+
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 
 <script type="text/javascript">
@@ -228,11 +232,50 @@ def lambda_handler(event, context):
     
     
       
-
+ 
   </section>
+  
+
+  
 </article>
 
+
+
 <footer>
+<hr>
+<script>
+$.disqusLoader( '.disqus', { scriptUrl: '//username.disqus.com/embed.js' });
+disqusConfig: function()
+{
+  this.callbacks.onReady = [function()
+  {
+    $( '.disqus-placeholder' ).addClass( 'is-hidden' );
+  }];
+}
+</script>
+<div class="disqus-placeholder">Loading comments...</div>
+<div class="disqus"></div>
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'ja-chandler';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
 
 <div class="footline">
     
@@ -264,7 +307,6 @@ def lambda_handler(event, context):
 	</div>
 </footer>
 
-<script src="/js/lazysizes.min.js" async=""></script>
 
 <script src="/js/clipboard.min.js"></script>
 

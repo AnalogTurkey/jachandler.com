@@ -13,6 +13,9 @@
 
 <footer>
 <hr>
+
+<div class="disqus-placeholder">Loading comments...</div>
+<div class="disqus">
 <script>
 $.disqusLoader( '.disqus', { scriptUrl: '//username.disqus.com/embed.js' });
 disqusConfig: function()
@@ -23,10 +26,7 @@ disqusConfig: function()
   }];
 }
 </script>
-<div class="disqus-placeholder">Loading comments...</div>
-<div class="disqus"></div>
-
-{{ partial "disqus.html" . }}
+</div>
 
 </div>
 

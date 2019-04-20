@@ -551,6 +551,14 @@ h6:hover .anchor {
   margin-top: -5px;
   border-right-color: rgba(0, 0, 0, 0.8); }
 
+.disqus {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+.disqus-placeholder.is-hidden { display: none; }
+  
 footer {
   color: #aaa;
   font-size: .95rem;
@@ -725,4 +733,7 @@ ul.children.children-card {
     margin-left: -1rem;
     margin-right: -1rem; } }
 
+	hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0; }
 /*# sourceMappingURL=style.css.map */
