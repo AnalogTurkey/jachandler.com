@@ -2,6 +2,7 @@ baseURL = "https://jachandler.com/"
 languageCode = "en-us"
 title = "Jonathan Chandler"
 theme = "docdock" 
+disqusShortname = "ja-chandler"
 
 [params]
 showVisitedLinks = true # default is false
