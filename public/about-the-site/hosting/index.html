@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.48" />
+<meta name="generator" content="Hugo 0.55.2" />
 <title>Hosting</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -16,9 +16,9 @@
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 
 <script type="text/javascript">
-      var baseurl = "http:\/\/jachandler.com\/";
+      var baseurl = "https:\/\/jachandler.com\/";
 </script>
-<meta name="description" content="Sure, I could put the whole thing on AWS, but that wouldn&#39;t be very safe (or cheap). And yes, Netlify exists, but that comes with limitations of its own. To maximize expandability and control while keeping running costs near zero, I&#39;ve spread out the hosting over a couple of providers.">
+<meta name="description" content="TL;DR: Netlify">
 
 
 
@@ -32,7 +32,7 @@
 	
 	
   
-    <a class="baselink" href="http://jachandler.com/">Jonathan Chandler</a>
+    <a class="baselink" href="https://jachandler.com/">Jonathan Chandler</a>
   
 
   </div>
@@ -164,11 +164,33 @@
     
     
     
-    <p>The site&rsquo;s CDN is handled by <a href="https://www.cloudflare.com/">Cloudflare</a>. Free CDN, DNS, optimizations, and added security.</p>
+    
 
-<p>Images are hosted using <a href="https://www.backblaze.com/b2/cloud-storage.html">Backblaze B2</a>. Although it doesn&rsquo;t support many of the features of other cloud storage solutions, it&rsquo;s a good bit cheaper. More importantly, it allows for the creation of simple request and bandwidth caps that AWS and Google don&rsquo;t support. I don&rsquo;t want a small personal site to scale up in case of an attack; I want it to stop loading large assets to minimize the damage. Or worse, someone trying to embed my content elsewhere. Even if B2 can&rsquo;t easily set bucket policies to only route through Cloudflare, the caps are an absolute protection against overcharging.</p>
+<p><del>The site&rsquo;s CDN is handled by <a href="https://www.cloudflare.com/">Cloudflare</a>. Free CDN, DNS, optimizations, and added security.</del></p>
 
-<p>The site itself is hosted on <a href="https://aws.amazon.com/s3/">Amazon S3</a>. Unlike Backblaze, AWS doesn&rsquo;t have a simple way to automatically shut down a site in case of an attack. That being the case, I really have no choice but to only host small files there; the only limit protecting me there is the request limit. As long as the files are kept small, that should saturate before paying for bandwidth becomes a massive issue.</p>
+<p><del>Images are hosted using <a href="https://www.backblaze.com/b2/cloud-storage.html">Backblaze B2</a>. Although it doesn&rsquo;t support many of the features of other cloud storage solutions, it&rsquo;s a good bit cheaper. More importantly, it allows for the creation of simple request and bandwidth caps that AWS and Google don&rsquo;t support. I don&rsquo;t want a small personal site to scale up in case of an attack; I want it to stop loading large assets to minimize the damage. Or worse, someone trying to embed my content elsewhere. Even if B2 can&rsquo;t easily set bucket policies to only route through Cloudflare, the caps are an absolute protection against overcharging.</del></p>
+
+<p><del>The site itself is hosted on <a href="https://aws.amazon.com/s3/">Amazon S3</a>. Unlike Backblaze, AWS doesn&rsquo;t have a simple way to automatically shut down a site in case of an attack. That being the case, I really have no choice but to only host small files there; the only limit protecting me there is the request limit. As long as the files are kept small, that should saturate before paying for bandwidth becomes a massive issue.</del></p>
+
+<h4 id="edit-19-april-2019">Edit 19 April 2019:</h4>
+
+<p>Transferred everything over to Netlify. Previously I had avoided that option because I want to avoid being locked into an ecosystem as much as possible, and because I wasn&rsquo;t sure if Netlify&rsquo;s model was sustainable.</p>
+
+<p>In practice though, these fears seem poorly founded. The ecosystem, while it does exist, is far from a walled garden; it&rsquo;s perfectly possible to use Netlify purely as a static host and spread out other features across different providers.</p>
+
+<p>And even if it weren&rsquo;t possible, I found myself asking why I would even want to. I used B2 because of its free 10GB of storage and 1GB/day bandwidth. Netlify offers a free 100GB storage and 100GB egress per month. Ditto for hosting advantages compared to Firebase. Direct integration with Github is super convenient. In a pure CDN role Netlify probably isn&rsquo;t as good as Cloudflare, but it has the latency advantage of being both the host and CDN, and since Netlify doesn&rsquo;t even have my payment information I don&rsquo;t even <em>need</em> a CDN to protect the site against DOS attacks. And to top it off there&rsquo;s nothing stopping me from using both if I wanted to.</p>
+
+<p>Other miscellaneous stuff:</p>
+
+<blockquote>
+<blockquote>
+<ul>
+<li>Netlify&rsquo;s forms look like a useful feature I&rsquo;d like to use sometime, even if the monthly limit of 100 is a bit low.<br /></li>
+<li>125k free serverless functions is significantly lower than other cloud services providers, but there&rsquo;s nothing preventing me from using their tools in tandem with Netlify. The same thing goes for many features that Netlify doesn&rsquo;t have (yet).<br /></li>
+<li>Technically the easiest (and most powerful) solution would probably be to plop a CDN in front of <a href="https://cloud.google.com/free/">Google Cloud&rsquo;s always free virtual server</a>, but that would defeat the point of having a static website. Perhaps I&rsquo;ll crack at some point in the future.</li>
+</ul>
+</blockquote>
+</blockquote>
 
 
     
@@ -202,8 +224,7 @@
 
 
   
-    <p><!--sse-->Any questions? Send me a message using c&#111;&#110;t&#97;&#99;&#116;&#64;j&#97;ch&#97;n&#100;ler&#46;&#99;o&#109; <!--/sse--></p>
-
+    
   
 
 

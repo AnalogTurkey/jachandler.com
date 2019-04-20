@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.48" />
+<meta name="generator" content="Hugo 0.55.2" />
 <title>Amazon S3 Request Security</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 
 <script type="text/javascript">
-      var baseurl = "http:\/\/jachandler.com\/";
+      var baseurl = "https:\/\/jachandler.com\/";
 </script>
 <meta name="description" content="AWS&#39;s request rules and lack of useful customizable limits allow attackers to rack up high bills for S3 bucket owners, even on private and empty buckets. The only effective defense is to immediately delete the affected resources when they are targeted. A simple lambda function and settings changes can help mitigate some of the danger.">
 
@@ -32,7 +32,7 @@
 	
 	
   
-    <a class="baselink" href="http://jachandler.com/">Jonathan Chandler</a>
+    <a class="baselink" href="https://jachandler.com/">Jonathan Chandler</a>
   
 
   </div>
@@ -169,8 +169,7 @@
 <div class="alert 
 alert-info"
  
-role="alert">AWS&rsquo;s request rules and lack of useful customizable limits allow attackers to rack up high bills for S3 bucket owners, including on fully private buckets. The only effective defense is to immediately delete the affected resources when they are targeted.</div>
-
+role="alert"> AWS's request rules and lack of useful customizable limits allow attackers to rack up high bills for S3 bucket owners, including on fully private buckets. The only effective defense is to immediately delete the affected resources when they are targeted.</div>
 
 <h2 id="the-problem">The Problem</h2>
 
@@ -185,10 +184,7 @@ role="alert">AWS&rsquo;s request rules and lack of useful customizable limits al
 
 <figure >
     
-        <img src="/images/S3Request/403charges-256.jpg" data-sizes="auto" data-srcset="/images/S3Request/403charges-256.jpg 256w,/images/S3Request/403charges-360.jpg 360w,/images/S3Request/403charges-512.jpg 512w,/images/S3Request/403charges-640.jpg 640w,/images/S3Request/403charges-768.jpg 768w,/images/S3Request/403charges-1024.jpg 1024w,/images/S3Request/403charges-1366.jpg 1366w,/images/S3Request/403charges-1600.jpg 1600w,/images/S3Request/403charges-1920.jpg 1920w" width="55%"  style="border:1px solid indigo" class="lazyload" />
-        <noscript>
-          <img src="/images/S3Request/403charges-512.jpg" width="55%"  style="border:1px solid indigo"/>
-        </noscript>
+        <img src="/images/S3Request/403charges-512.jpg" data-sizes="auto" data-srcset="/images/S3Request/403charges-512.jpg 512w,/images/S3Request/403charges-640.jpg 640w,/images/S3Request/403charges-768.jpg 768w,/images/S3Request/403charges-1024.jpg 1024w,/images/S3Request/403charges-1366.jpg 1366w,/images/S3Request/403charges-1600.jpg 1600w,/images/S3Request/403charges-1920.jpg 1920w" width="55%"  style="border:1px solid indigo" class="lazyload" />
     
     
 </figure>
@@ -260,8 +256,7 @@ def lambda_handler(event, context):
 
 
   
-    <p><!--sse-->Any questions? Send me a message using c&#111;&#110;t&#97;&#99;&#116;&#64;j&#97;ch&#97;n&#100;ler&#46;&#99;o&#109; <!--/sse--></p>
-
+    
   
 
 

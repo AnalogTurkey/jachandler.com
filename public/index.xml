@@ -2,72 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jonathan Chandler</title>
-    <link>http://jachandler.com/</link>
+    <link>https://jachandler.com/</link>
     <description>Recent content on Jonathan Chandler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 06 Sep 2018 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="http://jachandler.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jachandler.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Microphone Preamplifier Board</title>
-      <link>http://jachandler.com/projects/microphone-preamp/</link>
+      <link>https://jachandler.com/projects/microphone-preamp/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
       
-      <guid>http://jachandler.com/projects/microphone-preamp/</guid>
+      <guid>https://jachandler.com/projects/microphone-preamp/</guid>
       <description>Full Writeup Coming Soon! A preamplifier and power board I made for a stereo electret measurement microphone rig. This PCB is optimized for the Primo EM258 or Panasonic WM61 but may be used with others with some resistor value adjustments.
-Fresh bare PCB&amp;rsquo;s, expo marker for scale.
-A fully assembled board.
-The hand-soldered LDO, with tweezers and solder wire for scale.</description>
+Fresh bare PCB&amp;rsquo;s, expo marker for scale.
+A fully assembled board.
+The hand-soldered LDO, with tweezers and solder wire for scale.
+The back of the board.</description>
     </item>
     
     <item>
       <title>T.O.H.R.U (WIP)</title>
-      <link>http://jachandler.com/projects/audio-measurement-rig/</link>
+      <link>https://jachandler.com/projects/audio-measurement-rig/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
       
-      <guid>http://jachandler.com/projects/audio-measurement-rig/</guid>
+      <guid>https://jachandler.com/projects/audio-measurement-rig/</guid>
       <description>Work in Progress! The &amp;lsquo;Testing Of Headphone Responses Unit&amp;rsquo; (TOHRU) is a stereo electret microphone rig used for acoustic measurements. Still a work in progress. Currently has a flat closed-cell foam coupler for headphone measurements.
-A temporary taped-together version of the rig for testing before final assembly.
-A 1kHz FFT of the Sennheiser HD650 measured by TOHRU. Distortion is below -60dB (0.</description>
+A temporary taped-together version of the rig for testing before final assembly.
+A 1kHz FFT of the Sennheiser HD650 measured by TOHRU. Distortion is below -60dB (0.1%).
+An uncompensated frequency response comparison between the Monoprice Retro and Sennheiser HD650.</description>
     </item>
     
     <item>
       <title>Sony MDR-1000X Repair</title>
-      <link>http://jachandler.com/projects/sony-mdr-1000x-repair/</link>
+      <link>https://jachandler.com/projects/sony-mdr-1000x-repair/</link>
       <pubDate>Wed, 16 Jan 2019 00:00:00 -0800</pubDate>
       
-      <guid>http://jachandler.com/projects/sony-mdr-1000x-repair/</guid>
+      <guid>https://jachandler.com/projects/sony-mdr-1000x-repair/</guid>
       <description>A Fallen Titan When the Sony MDR-1000X came out in 2016, much of the audiophile community fell head over heels for it; Bose finally had a competitor in the high-performance ANC headphone space. After a few months, however, opinions of Sony were markedly less rosy: a poorly designed headband was causing premature failure in many of the units, and even worse, Sony was refusing to cover the failures under warranty1.</description>
     </item>
     
     <item>
       <title>Amazon S3 Request Security</title>
-      <link>http://jachandler.com/about-the-site/s3-request-security/</link>
+      <link>https://jachandler.com/about-the-site/s3-request-security/</link>
       <pubDate>Thu, 22 Nov 2018 00:00:00 -0800</pubDate>
       
-      <guid>http://jachandler.com/about-the-site/s3-request-security/</guid>
-      <description>AWS&amp;rsquo;s request rules and lack of useful customizable limits allow attackers to rack up high bills for S3 bucket owners, including on fully private buckets. The only effective defense is to immediately delete the affected resources when they are targeted.The Problem One of my goals with this site was to create the most functional website possible at the lowest possible cost. And sure, setting up a static site hosting bucket on S3 and forgetting about it seems like a simple solution.</description>
+      <guid>https://jachandler.com/about-the-site/s3-request-security/</guid>
+      <description>AWS&#39;s request rules and lack of useful customizable limits allow attackers to rack up high bills for S3 bucket owners, including on fully private buckets. The only effective defense is to immediately delete the affected resources when they are targeted. The Problem One of my goals with this site was to create the most functional website possible at the lowest possible cost. And sure, setting up a static site hosting bucket on S3 and forgetting about it seems like a simple solution.</description>
     </item>
     
     <item>
       <title>Hosting</title>
-      <link>http://jachandler.com/about-the-site/hosting/</link>
+      <link>https://jachandler.com/about-the-site/hosting/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>http://jachandler.com/about-the-site/hosting/</guid>
+      <guid>https://jachandler.com/about-the-site/hosting/</guid>
       <description>The site&amp;rsquo;s CDN is handled by Cloudflare. Free CDN, DNS, optimizations, and added security.
 Images are hosted using Backblaze B2. Although it doesn&amp;rsquo;t support many of the features of other cloud storage solutions, it&amp;rsquo;s a good bit cheaper. More importantly, it allows for the creation of simple request and bandwidth caps that AWS and Google don&amp;rsquo;t support. I don&amp;rsquo;t want a small personal site to scale up in case of an attack; I want it to stop loading large assets to minimize the damage.</description>
     </item>
     
     <item>
       <title>Building the Site</title>
-      <link>http://jachandler.com/about-the-site/building/</link>
+      <link>https://jachandler.com/about-the-site/building/</link>
       <pubDate>Sun, 16 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>http://jachandler.com/about-the-site/building/</guid>
+      <guid>https://jachandler.com/about-the-site/building/</guid>
       <description>This website was built using Hugo.
 The layout is based on DocDock.
 Responsive images and lazyloading use Lazysizes.
@@ -78,20 +80,20 @@ Copyright (c) 2014 Noel Bossart, http://noelboss.com MIT Licensed. Permission is
     
     <item>
       <title>Das Model S Mac Restoration</title>
-      <link>http://jachandler.com/projects/das-model-s-mac-restoration/</link>
+      <link>https://jachandler.com/projects/das-model-s-mac-restoration/</link>
       <pubDate>Sun, 16 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>http://jachandler.com/projects/das-model-s-mac-restoration/</guid>
+      <guid>https://jachandler.com/projects/das-model-s-mac-restoration/</guid>
       <description>For the past few weeks, I’ve been visiting the surplus store on campus regularly. Normally they have some interesting vintage boards in stock: so far I’ve seen buckling spring, “space invaders”, and a wide variety of Alps and Alps clones. The only Cherry board I’ve encountered so far has been a Das Model S Mac keyboard, which I bought for $2.
-Here it is with a few caps removed.</description>
+Here it is with a few caps removed. The V key was stuck when I got it.</description>
     </item>
     
     <item>
       <title>Credits</title>
-      <link>http://jachandler.com/credits/</link>
+      <link>https://jachandler.com/credits/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>http://jachandler.com/credits/</guid>
+      <guid>https://jachandler.com/credits/</guid>
       <description>This website was built using Hugo.
 The layout is based on DocDock.
 Responsive images and lazyloading use Lazysizes.
@@ -102,11 +104,11 @@ See the About The Site pages for more information.</description>
     
     <item>
       <title></title>
-      <link>http://jachandler.com/_footer/</link>
+      <link>https://jachandler.com/_footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jachandler.com/_footer/</guid>
-      <description>Any questions? Send me a message using c&amp;#111;&amp;#110;t&amp;#97;&amp;#99;&amp;#116;&amp;#64;j&amp;#97;ch&amp;#97;n&amp;#100;ler&amp;#46;&amp;#99;o&amp;#109;</description>
+      <guid>https://jachandler.com/_footer/</guid>
+      <description></description>
     </item>
     
   </channel>
