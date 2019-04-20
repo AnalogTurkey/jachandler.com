@@ -2,7 +2,7 @@
     {{ partial "next-prev-page.html" . }}
   </div>
  -->
-{{ partial "disqus.html" . }}  
+ 
   </section>
   
 
@@ -12,6 +12,8 @@
 
 
 <footer>
+<hr>
+{{ partial "disqus.html" . }}  
 
 <div class="footline">
     {{if .Params.tags }}
