@@ -14,21 +14,8 @@
 <footer>
 <hr>
 
-<div class="disqus-placeholder">Loading comments...</div>
-<div class="disqus">
-<script>
-$.disqusLoader( '.disqus', { scriptUrl: '//username.disqus.com/embed.js' });
-disqusConfig: function()
-{
-  this.callbacks.onReady = [function()
-  {
-    $( '.disqus-placeholder' ).addClass( 'is-hidden' );
-  }];
-}
-</script>
-</div>
+<div class="comments">{{ partial "disqus.html" . }}</div>
 
-</div>
 
 <div class="footline">
     {{if .Params.tags }}
