@@ -2,13 +2,6 @@
 <div class="disqus"></div>
 <script src="{{"js/disqusloader.js" | relURL}}"></script>
 
-<script>
-    disqusloader( '.disqus',
-        {
-            scriptUrl: '//{{ .Site.Params.disqusShortname }}.disqus.com/embed.js',
-            disqusConfig: function () {
-                this.page.url = "{{ .Site.Params.domain }}{{ .RelPermalink }}";
-                this.page.identifier = "{{ .Site.Params.domain }}{{ .RelPermalink }}";
-            }
-        });
+<script type="text/javascript">
+    disqusloader( '.disqus',{scriptUrl: '//{{ .Site.Params.disqusShortname }}.disqus.com/embed.js'});
 </script>
