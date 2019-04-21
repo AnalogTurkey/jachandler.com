@@ -1,6 +1,6 @@
-{{ if ne .Site.Params.disqusShortname ""}}
 
 <div class="disqus"></div>
+<script src="{{"js/disqusloader.js" | relURL}}"></script>
 
 <script>
     disqusloader( '.disqus',
@@ -12,4 +12,3 @@
             }
         });
 </script>
-{{ end }}
