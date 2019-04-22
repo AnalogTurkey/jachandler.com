@@ -1,4 +1,4 @@
-baseURL = "https://jachandler.com/"
+baseURL = "http://jachandler.com/"
 languageCode = "en-us"
 title = "Jonathan Chandler"
 theme = "docdock" 

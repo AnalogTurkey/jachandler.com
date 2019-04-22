@@ -13,9 +13,9 @@
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
 
-<script src="/js/jquery-2.x.min.js" async></script>
-<script src="/js/lazysizes.min.js" async=""></script>
-<script src="/js/disqusloader.js" async=""></script>
+<script async src="/js/jquery-2.x.min.js"></script>
+<script async src="/js/lazysizes.min.js"></script>
+
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 
@@ -207,39 +207,16 @@
 
 <footer>
 <hr>
-<script>
-$.disqusLoader( '.disqus', { scriptUrl: '//username.disqus.com/embed.js' });
-disqusConfig: function()
-{
-  this.callbacks.onReady = [function()
-  {
-    $( '.disqus-placeholder' ).addClass( 'is-hidden' );
-  }];
-}
-</script>
-<div class="disqus-placeholder">Loading comments...</div>
+
+<div class="comments">
 <div class="disqus"></div>
+<script src="/js/disqusloader.js"></script>
 
-
-<div id="disqus_thread"></div>
 <script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'ja-chandler';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
+    disqusloader( '.disqus',{scriptUrl: '//.disqus.com/embed.js'});
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
 </div>
+
 
 <div class="footline">
     

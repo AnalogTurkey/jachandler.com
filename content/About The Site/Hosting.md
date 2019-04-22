@@ -1,7 +1,7 @@
 +++
 title = "Hosting"
 description = "TL;DR: Netlify"
-date = 2018-09-19
+date = 2019-04-21
 +++
 
 ~~The site's CDN is handled by [Cloudflare](https://www.cloudflare.com/). Free CDN, DNS, optimizations, and added security.~~
