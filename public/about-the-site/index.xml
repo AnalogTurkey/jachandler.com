@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About The Site on Jonathan Chandler</title>
+    <link>http://jachandler.com/about-the-site/</link>
+    <description>Recent content in About The Site on Jonathan Chandler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Sep 2018 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="http://jachandler.com/about-the-site/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hosting</title>
+      <link>http://jachandler.com/about-the-site/hosting/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 -0700</pubDate>
+      
+      <guid>http://jachandler.com/about-the-site/hosting/</guid>
+      <description>The site&amp;rsquo;s CDN is handled by Cloudflare. Free CDN, DNS, optimizations, and added security.
+Images are hosted using Backblaze B2. Although it doesn&amp;rsquo;t support many of the features of other cloud storage solutions, it&amp;rsquo;s a good bit cheaper. More importantly, it allows for the creation of simple request and bandwidth caps that AWS and Google don&amp;rsquo;t support. I don&amp;rsquo;t want a small personal site to scale up in case of an attack; I want it to stop loading large assets to minimize the damage.</description>
+    </item>
+    
+    <item>
+      <title>Amazon S3 Request Security</title>
+      <link>http://jachandler.com/about-the-site/s3-request-security/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0800</pubDate>
+      
+      <guid>http://jachandler.com/about-the-site/s3-request-security/</guid>
+      <description>AWS&#39;s request rules and lack of useful customizable limits allow attackers to rack up high bills for S3 bucket owners, including on fully private buckets. The only effective defense is to immediately delete the affected resources when they are targeted. The Problem One of my goals with this site was to create the most functional website possible at the lowest possible cost. And sure, setting up a static site hosting bucket on S3 and forgetting about it seems like a simple solution.</description>
+    </item>
+    
+    <item>
+      <title>Building the Site</title>
+      <link>http://jachandler.com/about-the-site/building/</link>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 -0700</pubDate>
+      
+      <guid>http://jachandler.com/about-the-site/building/</guid>
+      <description>This website was built using Hugo.
+The layout is based on DocDock.
+Responsive images and lazyloading use Lazysizes.
+This is as good a time as any to include some of the licenses that were removed through minification.
+For featherlight:
+Copyright (c) 2014 Noel Bossart, http://noelboss.com MIT Licensed. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</description>
+    </item>
+    
+  </channel>
+</rss>

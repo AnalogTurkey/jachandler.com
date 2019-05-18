@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Jonathan Chandler</title>
+    <link>http://jachandler.com/projects/</link>
+    <description>Recent content in Projects on Jonathan Chandler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Sep 2018 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="http://jachandler.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Microphone Preamplifier Board</title>
+      <link>http://jachandler.com/projects/microphone-preamp/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>http://jachandler.com/projects/microphone-preamp/</guid>
+      <description>Full Writeup Coming Soon! A preamplifier and power board I made for a stereo electret measurement microphone rig. This PCB is optimized for the Primo EM258 or Panasonic WM61 but may be used with others with some resistor value adjustments.
+Fresh bare PCB&amp;rsquo;s, expo marker for scale.
+A fully assembled board.
+The hand-soldered LDO, with tweezers and solder wire for scale.
+The back of the board.</description>
+    </item>
+    
+    <item>
+      <title>T.O.H.R.U (WIP)</title>
+      <link>http://jachandler.com/projects/audio-measurement-rig/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>http://jachandler.com/projects/audio-measurement-rig/</guid>
+      <description>Work in Progress! The &amp;lsquo;Testing Of Headphone Responses Unit&amp;rsquo; (TOHRU) is a stereo electret microphone rig used for acoustic measurements. Still a work in progress. Currently has a flat closed-cell foam coupler for headphone measurements.
+A temporary taped-together version of the rig for testing before final assembly.
+A 1kHz FFT of the Sennheiser HD650 measured by TOHRU. Distortion is below -60dB (0.1%).
+An uncompensated frequency response comparison between the Monoprice Retro and Sennheiser HD650.</description>
+    </item>
+    
+    <item>
+      <title>Sony MDR-1000X Repair</title>
+      <link>http://jachandler.com/projects/sony-mdr-1000x-repair/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 -0800</pubDate>
+      
+      <guid>http://jachandler.com/projects/sony-mdr-1000x-repair/</guid>
+      <description>A Fallen Titan When the Sony MDR-1000X came out in 2016, much of the audiophile community fell head over heels for it; Bose finally had a competitor in the high-performance ANC headphone space. After a few months, however, opinions of Sony were markedly less rosy: a poorly designed headband was causing premature failure in many of the units, and even worse, Sony was refusing to cover the failures under warranty1.</description>
+    </item>
+    
+    <item>
+      <title>Das Model S Mac Restoration</title>
+      <link>http://jachandler.com/projects/das-model-s-mac-restoration/</link>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 -0700</pubDate>
+      
+      <guid>http://jachandler.com/projects/das-model-s-mac-restoration/</guid>
+      <description>For the past few weeks, I’ve been visiting the surplus store on campus regularly. Normally they have some interesting vintage boards in stock: so far I’ve seen buckling spring, “space invaders”, and a wide variety of Alps and Alps clones. The only Cherry board I’ve encountered so far has been a Das Model S Mac keyboard, which I bought for $2.
+Here it is with a few caps removed. The V key was stuck when I got it.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon S3 Request Security</title>
+    
+      
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.55.2" />
+<title>Amazon S3 Request Security</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<script async src="/js/jquery-2.x.min.js"></script>
+<script async src="/js/lazysizes.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+<script type="text/javascript">
+      var baseurl = "http:\/\/jachandler.com\/";
+</script>
+<meta name="description" content="AWS&#39;s request rules and lack of useful customizable limits allow attackers to rack up high bills for S3 bucket owners, even on private and empty buckets. The only effective defense is to immediately delete the affected resources when they are targeted. A simple lambda function and settings changes can help mitigate some of the danger.">
+
+
+
+    
+  </head>
+  <body data-url="/about-the-site/s3-request-security/">
+    
+      <header>
+  <div class="logo">
+    
+	
+	
+  
+    <a class="baselink" href="http://jachandler.com/">Jonathan Chandler</a>
+  
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://f002.backblazeb2.com/file/jachandlerFiles/JonathanAChandler_Resume_7-18.pdf"  rel="noopener">
+                  <i class='fa fa-file-pdf-o'></i> <label>Resume</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://www.ebay.com/sch/analogturkey/m.html?_nkw=&amp;_armrs=1&amp;_ipg=&amp;_from="  rel="noopener">
+                  <i class='fa fa-shopping-bag'></i> <label>Ebay</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/about-the-site/" class="dd-item parent alwaysopen haschildren
+        ">
+      <div>
+      <a href="/about-the-site/">About The Site</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/about-the-site/hosting/" class="dd-item">
+        <div>
+          <a href="/about-the-site/hosting/">
+            Hosting
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/about-the-site/s3-request-security/" class="dd-item active">
+        <div>
+          <a href="/about-the-site/s3-request-security/">
+            Amazon S3 Request Security
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/about-the-site/building/" class="dd-item">
+        <div>
+          <a href="/about-the-site/building/">
+            Building the Site
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/projects/" class="dd-item alwaysopen haschildren
+        ">
+      <div>
+      <a href="/projects/">Projects</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/projects/microphone-preamp/" class="dd-item">
+        <div>
+          <a href="/projects/microphone-preamp/">
+            Microphone Preamplifier Board
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/projects/audio-measurement-rig/" class="dd-item">
+        <div>
+          <a href="/projects/audio-measurement-rig/">
+            T.O.H.R.U (WIP)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/projects/sony-mdr-1000x-repair/" class="dd-item">
+        <div>
+          <a href="/projects/sony-mdr-1000x-repair/">
+            Sony MDR-1000X Repair
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/projects/das-model-s-mac-restoration/" class="dd-item">
+        <div>
+          <a href="/projects/das-model-s-mac-restoration/">
+            Das Model S Mac Restoration
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/about-the-site/" >
+   About The Site</option> 
+      <option value="/about-the-site/hosting/" >- Hosting</option>
+      <option value="/about-the-site/s3-request-security/"  selected>- Amazon S3 Request Security</option>
+      <option value="/about-the-site/building/" >- Building the Site</option>
+  
+    <option value="/projects/" >
+   Projects</option> 
+      <option value="/projects/microphone-preamp/" >- Microphone Preamplifier Board</option>
+      <option value="/projects/audio-measurement-rig/" >- T.O.H.R.U (WIP)</option>
+      <option value="/projects/sony-mdr-1000x-repair/" >- Sony MDR-1000X Repair</option>
+      <option value="/projects/das-model-s-mac-restoration/" >- Das Model S Mac Restoration</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+    
+
+    <h1>Amazon S3 Request Security</h1>
+    
+    
+    
+    
+
+<div class="alert 
+alert-info"
+ 
+role="alert"> AWS's request rules and lack of useful customizable limits allow attackers to rack up high bills for S3 bucket owners, including on fully private buckets. The only effective defense is to immediately delete the affected resources when they are targeted.</div>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>One of my goals with this site was to create the most functional website possible at the lowest possible cost. And sure, setting up a static site hosting bucket on S3 and forgetting about it seems like a simple solution. Just one slight problem – what happens to those costs if traffic (legitimate or not) suddenly spikes? How can I prevent a scenario where a site normally costing a couple cents per month suddenly racks up a bill in the thousands of dollars?</p>
+
+<p>Backblaze B2 has a ready answer to this problem: let the user set request/bandwidth limits and pause the service when those caps are reached. Unfortunately, AWS doesn&rsquo;t have anything like this<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>. Officially, the recommendation is to use billing alerts to send a notification when projected spending reaches a threshold, but even assuming the overutilized resources can be shut down immediately following the notification, billing is only updated a few times per day, leaving relatively large spans of time vulnerable.</p>
+
+<h2 id="what-about-bucket-permissions">What about bucket permissions?</h2>
+
+<p>Setting a bucket private or using a bucket policy to only allow trusted connections only prevent public <em>access</em> to a file; <a href="http://forums.aws.amazon.com/thread.jspa?messageID=58436">anonymous <em>requests</em> that end in a 403 error are still possible and are still billed to the bucket owner</a>. That&rsquo;s been Amazon&rsquo;s policy since the beginning, even though they don&rsquo;t warn users about this.</p>
+
+
+<figure >
+    
+        <img src="/images/S3Request/403charges-512.jpg" data-sizes="auto" data-srcset="/images/S3Request/403charges-512.jpg 512w,/images/S3Request/403charges-640.jpg 640w,/images/S3Request/403charges-768.jpg 768w,/images/S3Request/403charges-1024.jpg 1024w,/images/S3Request/403charges-1366.jpg 1366w,/images/S3Request/403charges-1600.jpg 1600w,/images/S3Request/403charges-1920.jpg 1920w" width="55%"  style="border:1px solid indigo" class="lazyload" />
+    
+    
+</figure>
+
+
+<p>Even if setting a bucket to &ldquo;requester pays&rdquo; is an option for the use case in question, that still doesn&rsquo;t help; <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html#ChargeDetails">AWS makes a special billing exception for code 403</a>.</p>
+
+<h2 id="what-can-be-done">What can be done?</h2>
+
+<p>The only surefire defense is to delete the bucket, and the best way to get that to happen automatically is through AWS Lambda. The code to do so is straightforward:</p>
+
+<pre><code>import boto3
+s3=boto3.resource('s3')
+
+def lambda_handler(event, context):
+
+    s3.Bucket('bucketName').objects.all().delete()
+    s3.Bucket('bucketName').delete()
+</code></pre>
+
+<p>The two lines of deletion are required because S3 only allows empty buckets to be deleted. Simply emptying the bucket isn&rsquo;t enough; attempts to access empty buckets <em>still</em> generate list requests.</p>
+
+<p>Amazon recommends that this sort of script be triggered by a billing alarm. Since billing alarms only update a few times per day (at least once per day, officially), this isn&rsquo;t a very good option for limiting costs: given that S3 automatically scales to handle thousands of requests per second, even an empty bucket can potentially cost more than a dollar per minute when targetted. Letting this run for a few hours pushes this into the hundreds of dollars – all this for a single empty bucket!</p>
+
+<p>A better way is to use a Cloudwatch alarm triggered by the bucket request metrics. This isn&rsquo;t strictly ideal; after all, there is a limit to how many of these paid metrics you can set up while staying within the free tier. For just a few buckets, though, it shouldn&rsquo;t cost anything extra.</p>
+
+<p>Under bucket management, enable request metrics. Then in Cloudwatch, create an alarm with the desired metric as a source and set the threshold and time period that you want to trigger the bucket deletion (I used AllRequests &gt;= 5,000 for 1 datapoints within 1 hour – Sum). For the action, have it send a notification to an SNS topic when in alarm state. In Lambda, create a Python function, paste the code, and set the SNS topic as the trigger.</p>
+
+<p>With that, the buckets will delete themselves when the number of requests directly to a bucket in a short period of time get out of hand. It&rsquo;s not at all an elegant solution, but as far as I&rsquo;m aware it&rsquo;s the only one that works. With a CDN in front, normal usage won&rsquo;t even touch the bucket most of the time, meaning there is minimal danger of a false alarm. Until there is a better and safer way though, I&rsquo;m keeping my S3 usage to a minimum.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Google Cloud doesn&rsquo;t either. However, they do have a good indefinite free tier which respects its own quotas, which is ideal for small projects. I hear Azure has spending limits, though I haven&rsquo;t used it so I can&rsquo;t comment on how well they work.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+    
+    
+      
+ 
+  </section>
+  
+
+  
+</article>
+
+
+
+<footer>
+<hr>
+
+<div class="comments"><script>
+$(function(){
+$('#show-comments').on('click', function(){
+var disqus_shortname = 'ja-chandler';
+
+(function() {
+var disqus = document.createElement('script');
+disqus.type = 'text/javascript';
+disqus.async = true;
+disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+})();
+
+$(this).hide(); 
+});
+});
+</script>
+
+
+
+<div class="disqus-comments">
+
+<button id="show-comments" class="btn btn-default" type="button">Load Comments</span></button>
+
+<div id="disqus_thread">
+</div>
+
+<script type="text/javascript">
+var disqus_config = function () {
+this.page.url = 'http:\/\/jachandler.com\/about-the-site\/s3-request-security';
+};
+</script>
+</div></div>
+
+<br>
+
+<div class="footline">
+    
+
+    
+
+  
+    <div class="date">
+        ©2018 Jonathan Chandler. Last update on November 22, 2018. 
+    </div>
+    
+
+    <div class="github-link">  
+      <a href="/about-the-site" target="blank"><i class="fa fa-th-list"></i>
+        Credits</a>
+    </div>
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

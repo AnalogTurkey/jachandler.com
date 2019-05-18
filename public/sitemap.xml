@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://jachandler.com/about-the-site/hosting/</loc>
+    <lastmod>2019-04-21T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/projects/microphone-preamp/</loc>
+    <lastmod>2019-01-23T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/projects/audio-measurement-rig/</loc>
+    <lastmod>2019-01-23T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/projects/sony-mdr-1000x-repair/</loc>
+    <lastmod>2019-01-16T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/about-the-site/s3-request-security/</loc>
+    <lastmod>2018-11-22T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/about-the-site/building/</loc>
+    <lastmod>2018-09-16T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/projects/das-model-s-mac-restoration/</loc>
+    <lastmod>2018-09-16T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/about-the-site/</loc>
+    <lastmod>2018-09-07T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/credits/</loc>
+    <lastmod>2018-09-07T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/</loc>
+    <lastmod>2018-09-06T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/projects/</loc>
+    <lastmod>2018-09-03T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/_footer/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
