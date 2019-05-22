@@ -5,6 +5,8 @@ date = 2018-09-16
 draft = false
 +++
 
+{{% alert theme="info" %}} I found a Das Model S keyboard in bad shape at the campus surplus store and decided to fix it up (and take a look inside).{{% /alert %}}
+
 For the past few weeks, I’ve been visiting the surplus store on campus regularly. Normally they have some interesting vintage boards in stock: so far I’ve seen buckling spring, “space invaders”, and a wide variety of Alps and Alps clones. The only Cherry board I’ve encountered so far has been a Das Model S Mac keyboard, which I bought for $2.
 
 {{< figure src="DasKeyboard/IMG_20171023_163841" type="jpg" width="55%">}}
@@ -20,11 +22,11 @@ With the keycaps removed, it was time to wash them. I put them all in a plastic 
 Keycaps out of the way, I then set about disassembling the board. A total of five screws hold the board together on the bottom: one under each foot, two at the bottom corners, and one under the warranty sticker. I removed all of the feet to be cleaned later.
 
 {{< figure src="DasKeyboard/IMG_20171024_161124" type="jpg" width="55%">}}
-{{< figure src="DasKeyboard/IMG_20171024_161213" type="jpg" width="55%">}}
+<!-- {{< figure src="DasKeyboard/IMG_20171024_161213" type="jpg" width="55%">}} -->
 
 From there, it was a matter of running my fingers along the edges to remove the top plastic shell. I managed to break a few of the tabs holding the two shells together in the process. Luckily the tabs aren’t really necessary since the screws connect both halves of the case.
 
-{{< figure src="DasKeyboard/IMG_20171024_162130" type="jpg" width="55%">}}
+<!--{{< figure src="DasKeyboard/IMG_20171024_162130" type="jpg" width="55%">}}-->
 {{< figure src="DasKeyboard/IMG_20171024_162513" type="jpg" width="55%">}}
 
 The insides of the shell were just as dirty as the top of the plate. A combination of brushing and compressed air took care of the larger pieces, leaving only the oil underneath. With the worst of the grime dislodged, I was then able to examine the electronics more closely.

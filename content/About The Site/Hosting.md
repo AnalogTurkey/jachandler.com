@@ -4,6 +4,8 @@ description = "TL;DR: Netlify"
 date = 2019-04-21
 +++
 
+{{% alert theme="info" %}} Previously the site was hosted across a number of providers to maximize the respective benefits of each of their free tiers. Now, however, Netlify combines many of their best aspects into one service.{{% /alert %}}
+
 ~~The site's CDN is handled by [Cloudflare](https://www.cloudflare.com/). Free CDN, DNS, optimizations, and added security.~~
 
 ~~Images are hosted using [Backblaze B2](https://www.backblaze.com/b2/cloud-storage.html). Although it doesn't support many of the features of other cloud storage solutions, it's a good bit cheaper. More importantly, it allows for the creation of simple request and bandwidth caps that AWS and Google don't support. I don't want a small personal site to scale up in case of an attack; I want it to stop loading large assets to minimize the damage. Or worse, someone trying to embed my content elsewhere. Even if B2 can't easily set bucket policies to only route through Cloudflare, the caps are an absolute protection against overcharging.~~

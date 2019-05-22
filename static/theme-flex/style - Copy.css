@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/*
-Novacento is not used anywhere on the site. It is kept here just in case.
-*/
 @font-face {
   font-family: 'Novacento Sans Wide';
   src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot");
@@ -9,14 +6,18 @@ Novacento is not used anywhere on the site. It is kept here just in case.
   font-style: normal;
   font-weight: 200; }
 @font-face {
-  font-family: 'Verdana';
+  font-family: 'Roboto';
   font-weight: 400;
-  src: local("Verdana"), local("Verdana-Regular"), url("../fonts/Roboto-Regular.ttf") format("truetype"); }
+  src: local("Roboto Regular"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.ttf") format("truetype"); }
 @font-face {
-  font-family: 'Verdana';
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/Roboto-Medium.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Roboto';
   font-style: italic;
   font-weight: 400;
-  src: local("Verdana Italic"), local("Verdana-Italic"), url("../fonts/Roboto-Italic.ttf") format("truetype"); }
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("../fonts/Roboto-Italic.ttf") format("truetype"); }
 @font-face {
   font-family: 'RobotoMono';
   font-weight: 400;
@@ -113,7 +114,7 @@ article > aside {
     list-style-type: none; }
     article > aside .menu > label {
       display: block;
-      font-family: 'Verdana', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+      font-family: 'Novacento Sans Wide', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
       font-weight: 100;
       font-size: 130%;
       margin-left: 1rem; }
@@ -183,11 +184,11 @@ article > aside {
 
 html,
 body {
-  font-size: 14px;
+  font-size: 16px;
   height: 100%; }
 
 html {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px; }
 
 body {
@@ -302,12 +303,12 @@ article section.page {
   -ms-flex: 1;
   flex: 1;
   box-sizing: border-box;
-  margin: 0 5rem 0 25rem;
+  margin: 0 0rem 0 20rem;
   overflow-y: auto;
-  padding: 2rem 11rem 0rem 11rem; }
+  padding: 2rem 7rem 0rem 7rem; }
   article section.page h1:first-of-type {
     margin: 3rem 0rem;
-    font-family: "Verdana", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-align: center;
     text-transform: uppercase;
     color: #060606;
