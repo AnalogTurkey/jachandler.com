@@ -21,7 +21,7 @@ A quick fix would have involved simply 3D-printing a replacement headband and bu
 
 The Brainwavz HM5 is considered by many to be one of the most comfortable pair of closed-back cans out there[^2], with its luxuriously deep pads and reasonably clamping headband. In other words, its parts are the perfect candidates for improvements to the MDR-1000X. And thankfully, they can be purchased seperately fairly easily.
 
-I bought an [NVX XPT100 replacement headband](https://www.sonicelectronix.com/item_112155_NVX-XPT100HB.html)for $20[^3] and [replacement earpads](https://www.aliexpress.com/item/1-Pair-Replacement-Memory-Foam-Ear-Cushions-Earpads-Cusion-Covers-for-Sony-HM5-Large-Over-head/32865781395.html) for $3[^4]. My original intent was to mount the MDR-1000X's cups on the new headband and route the internal cable along the inside of the new headband. As it turned out, however, removing the entire original headband is easier said than done.
+I bought an [NVX XPT100 replacement headband](https://www.sonicelectronix.com/item_112155_NVX-XPT100HB.html) for $20[^3] and [replacement earpads](https://www.aliexpress.com/item/1-Pair-Replacement-Memory-Foam-Ear-Cushions-Earpads-Cusion-Covers-for-Sony-HM5-Large-Over-head/32865781395.html) for $3[^4]. My original intent was to mount the MDR-1000X's cups on the new headband and route the internal cable along the inside of the new headband. As it turned out, however, removing the entire original headband is easier said than done.
 
 {{< figure src="1000X/IMG_20181102_192409" type="jpg" width="55%">}}
 

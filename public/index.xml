@@ -17,8 +17,8 @@
       <pubDate>Sun, 21 Apr 2019 00:00:00 -0700</pubDate>
       
       <guid>http://jachandler.com/about-the-site/hosting/</guid>
-      <description>The site&amp;rsquo;s CDN is handled by Cloudflare. Free CDN, DNS, optimizations, and added security.
-Images are hosted using Backblaze B2. Although it doesn&amp;rsquo;t support many of the features of other cloud storage solutions, it&amp;rsquo;s a good bit cheaper. More importantly, it allows for the creation of simple request and bandwidth caps that AWS and Google don&amp;rsquo;t support. I don&amp;rsquo;t want a small personal site to scale up in case of an attack; I want it to stop loading large assets to minimize the damage.</description>
+      <description>Previously the site was hosted across a number of providers to maximize the respective benefits of each of their free tiers. Now, however, Netlify combines many of their best aspects into one service. The site&amp;rsquo;s CDN is handled by Cloudflare. Free CDN, DNS, optimizations, and added security.
+Images are hosted using Backblaze B2. Although it doesn&amp;rsquo;t support many of the features of other cloud storage solutions, it&amp;rsquo;s a good bit cheaper.</description>
     </item>
     
     <item>
@@ -84,8 +84,7 @@ Copyright (c) 2014 Noel Bossart, http://noelboss.com MIT Licensed. Permission is
       <pubDate>Sun, 16 Sep 2018 00:00:00 -0700</pubDate>
       
       <guid>http://jachandler.com/projects/das-model-s-mac-restoration/</guid>
-      <description>For the past few weeks, I’ve been visiting the surplus store on campus regularly. Normally they have some interesting vintage boards in stock: so far I’ve seen buckling spring, “space invaders”, and a wide variety of Alps and Alps clones. The only Cherry board I’ve encountered so far has been a Das Model S Mac keyboard, which I bought for $2.
-Here it is with a few caps removed. The V key was stuck when I got it.</description>
+      <description>I found a Das Model S keyboard in bad shape at the campus surplus store and decided to fix it up (and take a look inside). For the past few weeks, I’ve been visiting the surplus store on campus regularly. Normally they have some interesting vintage boards in stock: so far I’ve seen buckling spring, “space invaders”, and a wide variety of Alps and Alps clones. The only Cherry board I’ve encountered so far has been a Das Model S Mac keyboard, which I bought for $2.</description>
     </item>
     
     <item>

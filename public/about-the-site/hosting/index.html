@@ -170,6 +170,11 @@
     
     
 
+<div class="alert 
+alert-info"
+ 
+role="alert"> Previously the site was hosted across a number of providers to maximize the respective benefits of each of their free tiers. Now, however, Netlify combines many of their best aspects into one service.</div>
+
 <p><del>The site&rsquo;s CDN is handled by <a href="https://www.cloudflare.com/">Cloudflare</a>. Free CDN, DNS, optimizations, and added security.</del></p>
 
 <p><del>Images are hosted using <a href="https://www.backblaze.com/b2/cloud-storage.html">Backblaze B2</a>. Although it doesn&rsquo;t support many of the features of other cloud storage solutions, it&rsquo;s a good bit cheaper. More importantly, it allows for the creation of simple request and bandwidth caps that AWS and Google don&rsquo;t support. I don&rsquo;t want a small personal site to scale up in case of an attack; I want it to stop loading large assets to minimize the damage. Or worse, someone trying to embed my content elsewhere. Even if B2 can&rsquo;t easily set bucket policies to only route through Cloudflare, the caps are an absolute protection against overcharging.</del></p>
@@ -211,7 +216,7 @@
 
 <footer>
 <hr>
-
+<center>
 <div class="comments"><script>
 $(function(){
 $('#show-comments').on('click', function(){
@@ -245,7 +250,7 @@ this.page.url = 'http:\/\/jachandler.com\/about-the-site\/hosting';
 };
 </script>
 </div></div>
-
+</center>
 <br>
 
 <div class="footline">
@@ -255,7 +260,7 @@ this.page.url = 'http:\/\/jachandler.com\/about-the-site\/hosting';
 
   
     <div class="date">
-        ©2019 Jonathan Chandler. Last update on April 21, 2019. 
+        ©2019 Jonathan Chandler. Published April 21, 2019. 
     </div>
     
 
