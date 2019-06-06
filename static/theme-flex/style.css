@@ -707,7 +707,8 @@ ul.children.children-card {
     display: none; }
 
   footer {
-    display: none; }
+    margin: 0 1rem 0 1rem;
+	padding: 1rem;  }
 
   article > section.page {
     margin: 0 2rem 0 2rem;
