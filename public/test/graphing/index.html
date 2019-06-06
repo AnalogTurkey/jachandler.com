@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jonathan Chandler</title>
+    <title>Graphing</title>
     
       
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title>404 Page not found</title>
+<title>Graphing</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -22,13 +22,13 @@
 <script type="text/javascript">
       var baseurl = "http:\/\/jachandler.com\/";
 </script>
-<meta name="description" content="">
+<meta name="description" content="Graphing.">
 
 
 
     
   </head>
-  <body data-url="/404.html">
+  <body data-url="/test/graphing/">
     
       <header>
   <div class="logo">
@@ -62,10 +62,11 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
-    <li data-nav-id="/test/" class="dd-item haschildren
+    <li data-nav-id="/test/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/test/">Tests</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/test/">Tests</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
         </ul>
@@ -152,7 +153,8 @@
         <select onchange="javascript:location.href = this.value;">
           
     <option value="/test/" >
-   Tests</option>
+   Tests</option> 
+  
     <option value="/about-the-site/" >
    About The Site</option> 
       <option value="/about-the-site/hosting/" >- Hosting</option>
@@ -174,16 +176,46 @@
     </div>
     
 
-    <h1>404 Page not found</h1>
+    <h1>Graphing</h1>
     
     
-	<h1>Error</h1>
-	<p>
-	</p>
-	<p>Looks like this page doesn&#39;t exist.</p>
-	<p></p>
-	<p><a href="http://jachandler.com/">Go to homepage</a></p>
-	 
+    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<div id="thisDiv">
+      <!-- Plotly chart will be drawn inside this DIV -->
+</div>
+  
+
+<script>
+    var trace1 = {
+        type: 'bar',
+        x: [1, 2, 3, 4],
+        y: [5, 10, 2, 8],
+        marker: {
+            color: '#C8A2C8',
+            line: {
+                width: 2.5
+            }
+        }
+    };
+
+    var data = [ trace1 ];
+    
+
+    Plotly.newPlot('thisDiv', data, {responsive: true});
+    
+    window.onresize = function() {
+  Plotly.Plots.resize(my_Div);
+};
+
+//document.getElementById("thisDiv").setAttribute("width","55%");
+//document.getElementById("thisDiv").setAttribute("style","border:1px solid indigo");
+//document.getElementById("thisDiv").style.padding = "11px";
+
+</script>
+
+
     
     
       
@@ -228,7 +260,7 @@ $(this).hide();
 
 <script type="text/javascript">
 var disqus_config = function () {
-this.page.url = 'http:\/\/jachandler.com\/404.html';
+this.page.url = 'http:\/\/jachandler.com\/test\/graphing';
 };
 </script>
 </div></div>
@@ -241,6 +273,10 @@ this.page.url = 'http:\/\/jachandler.com\/404.html';
     
 
   
+    <div class="date">
+        ©2019 Jonathan Chandler. Published May 23, 2019. 
+    </div>
+    
 
     <div class="github-link">  
       <a href="/about-the-site" target="blank"><i class="fa fa-th-list"></i>
@@ -282,5 +318,3 @@ this.page.url = 'http:\/\/jachandler.com\/404.html';
     
   </body>
 </html>
-
-

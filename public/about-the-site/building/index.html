@@ -62,6 +62,14 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
+    <li data-nav-id="/test/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/test/">Tests</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+        </ul>
+    </li>
     <li data-nav-id="/about-the-site/" class="dd-item parent alwaysopen haschildren
         ">
       <div>
@@ -143,6 +151,8 @@
       <center>Navigation : 
         <select onchange="javascript:location.href = this.value;">
           
+    <option value="/test/" >
+   Tests</option>
     <option value="/about-the-site/" >
    About The Site</option> 
       <option value="/about-the-site/hosting/" >- Hosting</option>
@@ -168,38 +178,11 @@
     
     
     
-    <p>This website was built using <a href="https://github.com/gohugoio/hugo">Hugo</a>.</p>
+    <p>This website was made using <a href="https://github.com/gohugoio/hugo">Hugo</a>. It is deployed and built on Netlify with images handled by Netlify large media.</p>
 
-<p>The layout is based on <a href="https://github.com/vjeantet/hugo-theme-docdock">DocDock</a>.</p>
+<p>The layout is based on the <a href="https://github.com/vjeantet/hugo-theme-docdock">DocDock</a> theme. This includes <a href="https://noelboss.github.io/featherlight/">Featherlight</a> for lightbox viewing. Responsive images and lazyloading use <a href="https://github.com/aFarkas/lazysizes">Lazysizes</a>. This is implemented through a Hugo shortcode which selects from 8 variants of each image, one full-sized and only loaded when the image is clicked.</p>
 
-<p>Responsive images and lazyloading use <a href="https://github.com/aFarkas/lazysizes">Lazysizes</a>.</p>
-
-<p>This is as good a time as any to include some of the licenses that were removed through minification.</p>
-
-<p>For featherlight:</p>
-
-<pre><code>Copyright (c) 2014 Noel Bossart, http://noelboss.com
-MIT Licensed.
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-&quot;Software&quot;), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</code></pre>
+<p>I would have liked to use <a href="https://gitlab.com/commento/commento">Commento</a> for the comment system; it&rsquo;s lightweight, respects privacy, and has good social integration given its size. However, since it requires its own hosting, it&rsquo;s not exactly within the spirit of this project. Comments now use <a href="https://disqus.com/">Disqus</a>. It has its drawbacks (overhead, user tracking, lack of control), but these are mitigated by the button at the bottom of each page, which only loads Disqus when clicked.</p>
 
 
     
@@ -216,7 +199,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <footer>
 <hr>
-<center>
+
 <div class="comments"><script>
 $(function(){
 $('#show-comments').on('click', function(){
@@ -250,7 +233,7 @@ this.page.url = 'http:\/\/jachandler.com\/about-the-site\/building';
 };
 </script>
 </div></div>
-</center>
+
 <br>
 
 <div class="footline">

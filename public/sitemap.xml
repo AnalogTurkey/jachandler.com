@@ -3,6 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://jachandler.com/test/graphing/</loc>
+    <lastmod>2019-05-23T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jachandler.com/test/</loc>
+    <lastmod>2019-05-23T00:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://jachandler.com/about-the-site/hosting/</loc>
     <lastmod>2019-04-21T00:00:00-07:00</lastmod>
   </url>

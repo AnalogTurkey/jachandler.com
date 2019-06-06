@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Graphing</title>
+      <link>http://jachandler.com/test/graphing/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 -0700</pubDate>
+      
+      <guid>http://jachandler.com/test/graphing/</guid>
+      <description>   var trace1 = { type: &#39;bar&#39;, x: [1, 2, 3, 4], y: [5, 10, 2, 8], marker: { color: &#39;#C8A2C8&#39;, line: { width: 2.5 } } }; var data = [ trace1 ]; Plotly.newPlot(&#39;thisDiv&#39;, data, {responsive: true}); window.onresize = function() { Plotly.Plots.resize(my_Div); }; //document.getElementById(&#34;thisDiv&#34;).setAttribute(&#34;width&#34;,&#34;55%&#34;); //document.getElementById(&#34;thisDiv&#34;).setAttribute(&#34;style&#34;,&#34;border:1px solid indigo&#34;); //document.getElementById(&#34;thisDiv&#34;).style.padding = &#34;11px&#34;;  </description>
+    </item>
+    
+    <item>
       <title>Hosting</title>
       <link>http://jachandler.com/about-the-site/hosting/</link>
       <pubDate>Sun, 21 Apr 2019 00:00:00 -0700</pubDate>
@@ -70,12 +79,9 @@ Images are hosted using Backblaze B2. Although it doesn&amp;rsquo;t support many
       <pubDate>Sun, 16 Sep 2018 00:00:00 -0700</pubDate>
       
       <guid>http://jachandler.com/about-the-site/building/</guid>
-      <description>This website was built using Hugo.
-The layout is based on DocDock.
-Responsive images and lazyloading use Lazysizes.
-This is as good a time as any to include some of the licenses that were removed through minification.
-For featherlight:
-Copyright (c) 2014 Noel Bossart, http://noelboss.com MIT Licensed. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</description>
+      <description>This website was made using Hugo. It is deployed and built on Netlify with images handled by Netlify large media.
+The layout is based on the DocDock theme. This includes Featherlight for lightbox viewing. Responsive images and lazyloading use Lazysizes. This is implemented through a Hugo shortcode which selects from 8 variants of each image, one full-sized and only loaded when the image is clicked.
+I would have liked to use Commento for the comment system; it&amp;rsquo;s lightweight, respects privacy, and has good social integration given its size.</description>
     </item>
     
     <item>
