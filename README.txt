@@ -1,0 +1,1 @@
+This is the source for the old static version of my website, which is no longer maintained. There is still some useful stuff in here, but for the most part I have moved on to Wordpress for ease of editing.
